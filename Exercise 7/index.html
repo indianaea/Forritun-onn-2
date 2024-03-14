@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white flex flex-col items-center justify-center h-screen">
+
+    <!-- Number -->
+    <div id="numberDisplay" class="text-9xl font-bold mb-4">
+        0
+    </div>
+
+    <!-- Increment/decrement buttons -->
+    <div class="flex space-x-4 mb-4">
+        <button id="increment"
+            class="bg-green-500 text-white text-3xl h-16 w-16 flex items-center justify-center rounded shadow-lg focus:outline-none">
+            +
+        </button>
+        <button id="decrement"
+            class="bg-red-500 text-white text-3xl h-16 w-16 flex items-center justify-center rounded shadow-lg focus:outline-none">
+            -
+        </button>
+    </div>
+
+    <!-- bOoMm message -->
+    <div id="boomMessage" class="text-5xl"
+        style="background-color: #8a2be2; color: white; padding: 0.5rem 1rem; border-radius: 0.5rem;">
+        !bOoMm!
+    </div>
+
+    <!-- Settings for increment/decrement value and limit -->
+    <div class="flex space-x-2 my-4">
+        <input id="stepValue" type="number" placeholder="Step Value" class="input input-bordered w-full max-w-xs" />
+        <input id="limitValue" type="number" placeholder="Limit Value" class="input input-bordered w-full max-w-xs" />
+    </div>
+    <button id="saveSettings" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+        Save
+    </button>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
