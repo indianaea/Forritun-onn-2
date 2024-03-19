@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-khaki flex flex-col min-h-screen font-sans">
+    <!-- Navbar -->
+    <nav class="fixed bg-gray-800 bg-opacity-10 text-white font-sans p-4 shadow-lg mx-auto left-4 right-4 top-4 rounded-lg m-auto overscroll-none"
+        style="z-index: 10;">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="llama (1).png" alt="Logo" class="h-14 md:h-14 mr-3">
+            </a>
+            <button id="menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden md:flex gap-4">
+                <a href="menu.html" class="hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="hover:text-raisinblack">Contact</a>
+            </div>
+            <!-- Mobile -->
+            <div id="mobile-menu" class="hidden">
+                <a href="menu.html" class="block hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="block hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="block hover:text-raisinblack">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex-1 container max-w-4xl mx-auto p-5 mt-36">
+        <h1 class="text-4xl font-bold mb-2">Starters</h1>
+        <div class="h-1 bg-black mb-8" style="width: 260px;"></div>
+        <!-- First Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/429476247_778159327529417_635815065968503042_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Chicken Caesar Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Chicken Caesar Salad with Romaine Lettuce, Grilled
+                    Chicken, Parmesan Cheese, and
+                    Caesar Dressing.</p>
+            </div>
+        </div>
+
+        <!-- Second Dish - Image Left on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-1">
+                <img src="dishes/430182224_2117777741914944_2539049768948188489_n.png" alt="Second Dish"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:ml-4 md:order-2 text-center md:text-right mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Classic Cobb Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Classic Cobb Salad with Grilled Chicken, Avocado,
+                    Bacon, Hard-Boiled Eggs,
+                    Tomatoes, and Blue Cheese Dressing.</p>
+            </div>
+        </div>
+
+        <!-- Third Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/430418121_360510000222157_1312787247795015964_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Asian Chicken Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Asian Chicken Salad with Shredded Chicken, Mandarin
+                    Oranges, Crispy Wontons, and
+                    Sesame Ginger Dressing.</p>
+            </div>
+        </div>
+
+        <h1 class="text-4xl font-bold mb-2">Main courses</h1>
+        <div class="h-1 bg-black mb-8" style="width: 260px;"></div>
+        <!-- Fourth Dish - Image Left on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-1">
+                <img src="dishes/430634998_3567212880196973_5118717806251263912_n.png" alt="Second Dish"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:ml-4 md:order-2 text-center md:text-right mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Southwest Chicken Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Southwest Chicken Salad with Grilled Chicken, Corn,
+                    Black Beans, Avocado,
+                    Tomatoes, and Chipotle Ranch Dressing.</p>
+            </div>
+        </div>
+
+        <!-- Fifth Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/429913139_935745751531826_2809935944646342857_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Grilled Chicken Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Grilled Chicken Salad with Mixed Greens, Grilled
+                    Chicken, Cherry Tomatoes, Red
+                    Onion, and Balsamic Vinaigrette.</p>
+            </div>
+        </div>
+
+        <!-- Sixth Dish - Image Left on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-1">
+                <img src="dishes/429469018_940774867748184_5818060809437250845_n-1.png" alt="Second Dish"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:ml-4 md:order-2 text-center md:text-right mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Greek Chicken Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Greek Chicken Salad with Grilled Chicken, Feta
+                    Cheese, Cucumbers, Kalamata Olives,
+                    and Lemon-Olive Oil Dressing.</p>
+            </div>
+        </div>
+
+        <!-- Seventh Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/430634998_3567212880196973_5118717806251263912_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Buffalo Chicken Salad</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Buffalo Chicken Salad with Crispy Chicken Tenders,
+                    Mixed Greens, Carrots, Celery,
+                    Blue Cheese Crumbles, and Buffalo Ranch Dressing.</p>
+            </div>
+        </div>
+
+        <h1 class="text-4xl font-bold mb-2">Sandwiches</h1>
+        <div class="h-1 bg-black mb-8" style="width: 260px;"></div>
+        <!-- Eight Dish - Image Left on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-1">
+                <img src="dishes/429785983_930985044972314_4779316177836784773_n.png" alt="Second Dish"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:ml-4 md:order-2 text-center md:text-right mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Grilled Chicken Panini</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Grilled Chicken Panini with Mozzarella Cheese,
+                    Roasted Red Peppers, and Pesto Mayo.</p>
+            </div>
+        </div>
+
+        <!-- Nineth Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/429885557_328150343563361_2512034469401537760_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Chicken Salad Sandwich</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Chicken Salad Sandwich with Shredded Chicken, Grapes,
+                    Almonds, and Lettuce on
+                    Whole Wheat Bread.</p>
+            </div>
+        </div>
+
+        <!-- Tenth Dish - Image Left on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-1">
+                <img src="dishes/429963071_941217280758475_5939698574740538399_n.png" alt="Second Dish"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:ml-4 md:order-2 text-center md:text-right mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Buffalo Chicken Wrap</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Buffalo Chicken Wrap with Crispy Chicken Tenders,
+                    Mixed Greens, Blue Cheese
+                    Crumbles, and Buffalo Ranch Dressing in a Flour Tortilla.</p>
+            </div>
+        </div>
+
+        <h1 class="text-4xl font-bold mb-2">Sides</h1>
+        <div class="h-1 bg-black mb-8" style="width: 260px;"></div>
+        <!-- Elleventh Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/429476247_778159327529417_635815065968503042_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Sweet Potato Fries</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Who doesn't love sweet potatos!</p>
+            </div>
+        </div>
+
+        <!-- Tweleth Dish - Image Left on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-1">
+                <img src="dishes/429963071_941217280758475_5939698574740538399_n.png" alt="Second Dish"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:ml-4 md:order-2 text-center md:text-right mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Garlic Parmesan Fries</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Parmesan what else do you need?</p>
+
+            </div>
+        </div>
+
+        <!-- Thirdteenth Dish - Image Right on Desktop -->
+        <div class="flex flex-col md:flex-row items-center mb-12">
+            <div class="md:flex-1 md:order-2">
+                <img src="dishes/430349249_1854763721629309_3876701717247367550_n.png" alt="Grilled Salmon"
+                    class="rounded-lg shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto">
+            </div>
+            <div class="md:flex-1 md:mr-4 md:order-1 text-center md:text-left mx-auto sm:w-3/4 md:w-full">
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Grilled Vegetables</h2>
+                <p class="text-sm sm:text-base text-gray-600 mt-2">Mmm you have taste this one..</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-raisinblack text-white font-sans text-center p-4 mt-4 rounded-tl-2xl rounded-tr-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-around items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/home-outline.svg" alt="Address" class="h-6 w-6 mr-2">
+                <span>1404 Food road</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/call-outline.svg" alt="Phone" class="h-6 w-6 mr-2">
+                <span>555-3212</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/mail-outline.svg" alt="Email" class="h-6 w-6 mr-2">
+                <span>frontdesk@hungryllama.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-khaki flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed bg-gray-800 bg-opacity-10 text-white font-sans p-4 shadow-lg mx-auto left-4 right-4 top-4 rounded-lg m-auto overscroll-none"
+        style="z-index: 10;">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="llama (1).png" alt="Logo" class="h-14 md:h-14 mr-3">
+            </a>
+            <button id="menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden md:flex gap-4">
+                <a href="menu.html" class="hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="hover:text-raisinblack">Contact</a>
+            </div>
+            <!-- Mobile -->
+            <div id="mobile-menu" class="hidden">
+                <a href="menu.html" class="block hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="block hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="block hover:text-raisinblack">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="flex-1 container max-w-md mx-auto bg-white p-6 rounded-lg shadow mt-36 mb-20 z-0">
+        <h1 class="text-xl font-bold mb-4">Send us anything!</h1>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-sans text-gray-700">Name</label>
+                <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-sans text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+            <div class="mb-4">
+                <label for="type" class="block text-sm font-sans text-gray-700">Type of Request</label>
+                <select id="type" name="type" class="mt-1 block w-full p-2 border rounded-md bg-white">
+                    <option>General request</option>
+                    <option>Restaurants</option>
+                    <option>Office</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-sans text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
+            </div>
+            <button type="submit"
+                class="px-4 py-2 bg-chestnut font-sans text-white rounded hover:bg-raisinblack">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-raisinblack text-white font-sans text-center p-4 mt-4 rounded-tl-2xl rounded-tr-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-around items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/home-outline.svg" alt="Address" class="h-6 w-6 mr-2">
+                <span>1404 Food road</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/call-outline.svg" alt="Phone" class="h-6 w-6 mr-2">
+                <span>555-3212</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/mail-outline.svg" alt="Email" class="h-6 w-6 mr-2">
+                <span>frontdesk@hungryllama.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

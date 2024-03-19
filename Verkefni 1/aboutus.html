@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-khaki flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed bg-gray-800 bg-opacity-10 text-white font-sans p-4 shadow-lg mx-auto left-4 right-4 top-4 rounded-lg m-auto overscroll-none"
+        style="z-index: 10;">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="llama (1).png" alt="Logo" class="h-14 md:h-14 mr-3">
+            </a>
+            <button id="menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden md:flex gap-4">
+                <a href="menu.html" class="hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="hover:text-raisinblack">Contact</a>
+            </div>
+            <!-- Mobile -->
+            <div id="mobile-menu" class="hidden">
+                <a href="menu.html" class="block hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="block hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="block hover:text-raisinblack">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About us -->
+    <div class="flex-1 container mx-auto p-4 mt-36 font-sans">
+        <h1 class="text-4xl text-raisinblack font-bold mb-2">About us</h1>
+        <div class="h-1 bg-raisinblack mb-8" style="width: 260px;"></div>
+        <div class="dish">
+            <p class="description text-raisinblack">Welcome to The Hungry Llama, a family-owned restaurant that offers a
+                unique and
+                unforgettable dining experience. Our restaurant is inspired by the bold flavors and
+                warm hospitality of South America, and we pride ourselves on serving fresh and
+                locally sourced ingredients. At The Hungry Llama, we believe that food is not just a
+                necessity, but an adventure, and we aim to take our customers on a culinary journey
+                through our carefully crafted menu. Whether you're in the mood for a hearty meal or
+                a light bite, our diverse menu has something for everyone. We also offer a wide
+                selection of refreshing beverages and cocktails to complement your meal. Come join
+                us at The Hungry Llama, where good food meets great company.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-raisinblack text-white font-sans text-center p-4 mt-4 rounded-tl-2xl rounded-tr-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-around items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/home-outline.svg" alt="Address" class="h-6 w-6 mr-2">
+                <span>1404 Food road</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/call-outline.svg" alt="Phone" class="h-6 w-6 mr-2">
+                <span>555-3212</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/mail-outline.svg" alt="Email" class="h-6 w-6 mr-2">
+                <span>frontdesk@hungryllama.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

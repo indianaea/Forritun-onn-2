@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-khaki">
+    <!-- Navbar -->
+    <nav class="fixed bg-gray-800 bg-opacity-10 text-white font-sans p-4 shadow-lg mx-auto left-4 right-4 top-4 rounded-lg m-auto overscroll-none"
+        style="z-index: 10;">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="llama (1).png" alt="Logo" class="h-14 md:h-14 mr-3">
+            </a>
+            <button id="menu-btn" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <div class="hidden md:flex gap-4">
+                <a href="menu.html" class="hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="hover:text-raisinblack">Contact</a>
+            </div>
+            <!-- Mobile -->
+            <div id="mobile-menu" class="hidden">
+                <a href="menu.html" class="block hover:text-raisinblack">Menu</a>
+                <a href="aboutus.html" class="block hover:text-raisinblack">About Us</a>
+                <a href="contact.html" class="block hover:text-raisinblack">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen z-0 flex justify-center items-center">
+        <!-- Background image -->
+        <div class="absolute top-0 left-0 w-full h-full z-[-1]">
+            <img src="backround2.png" alt="Background" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Content -->
+        <div class="flex-1">
+            <div class="container mx-auto px-6 md:px-12 xl:px-24 z-10">
+                <div class="text-left text-white">
+                    <h1 class="font-sans text-4xl md:text-5xl lg:text-6xl">Where good food meets great company</h1>
+                    <p class="font-sans mt-3 text-lg md:text-xl lg:text-2xl">Take a look into our great menu!</p>
+                    <button onclick="location.href='menu.html'"
+                        class="bg-transparent hover:bg-chestnut text-raisinblack font-sans font-bold hover:text-raisinblack py-1.5 px-4 border border-raisinblack hover:border-transparent rounded-full shadow-md mt-4">
+                        View Menu
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 sm:mr-0 md:mr-20 lg:mr-20 xl:mr-20">
+            <img src="dishes/an-bg.png" alt="Hero Image"
+                class="w-full md:w-full lg:w-full xl:w-full max-w-2xl h-auto md:right-8 lg:ml-4 xl:ml-1">
+        </div>
+    </div>
+
+    <!-- Popular dishes -->
+    <div class="container bg-khaki py-12 mx-auto px-6 md:px-12 xl:px-24">
+        <h2 class="text-4xl font-sans text-left text-raisinblack mb-2">Our Most Popular Dishes</h2>
+        <div class="h-1 bg-raisinblack mb-8" style="width: 480px;"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div class="flex flex-col items-center">
+                <img src="dishes/429785983_930985044972314_4779316177836784773_n.png" alt="Dish 1"
+                    class="shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto rounded-3xl">
+                <h3 class="text-xl text-raisinblack font-semibold mt-4">Buffalo Chicken Salad</h3>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="dishes/430182224_2117777741914944_2539049768948188489_n.png" alt="Dish 2"
+                    class="shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto rounded-3xl">
+                <h3 class="text-xl text-raisinblack font-semibold mt-4">Grilled Chicken Panini</h3>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="dishes/430706804_426608639817560_3944835440374506517_n.png" alt="Dish 3"
+                    class="shadow-md w-3/4 sm:w-full h-auto object-cover mb-4 md:mb-0 mx-auto rounded-3xl">
+                <h3 class="text-xl text-raisinblack font-semibold mt-4">Garlic Parmesan Fries</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-raisinblack text-white font-sans text-center p-4 mt-4 rounded-tl-2xl rounded-tr-2xl">
+        <div class="container mx-auto flex flex-col md:flex-row justify-around items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/home-outline.svg" alt="Address" class="h-6 w-6 mr-2">
+                <span>1404 Food road</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/call-outline.svg" alt="Phone" class="h-6 w-6 mr-2">
+                <span>555-3212</span>
+            </div>
+
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="Icons/mail-outline.svg" alt="Email" class="h-6 w-6 mr-2">
+                <span>frontdesk@hungryllama.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
