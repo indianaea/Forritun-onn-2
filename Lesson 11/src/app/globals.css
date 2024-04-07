@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #102A43; /* A dark background color */
+  color: #fff; /* White text color */
+  line-height: 1.6;
+  padding: 0px; /* Add padding to the body */
+}
+
+.header {
+  display: flex; /* Establishes a flex container */
+  justify-content: space-between; /* Aligns children (text and image) on opposite ends */
+  align-items: center; /* Vertically centers children in the container */
+  text-align: left;
+  padding: 20px;
+  border-bottom: 2px solid #006992; /* Add a border to separate the header from the content */
+  margin-bottom: 20px;
+}
+
+/* Adjust the size of the heading and paragraph if they are too big for your layout */
+.header h1 {
+  font-size: 2.5rem; /* Large font size for the name */
+  margin-bottom: 0.5rem;
+  flex-grow: 1; /* Allows the heading to grow and push the image to the end */
+}
+
+.header p {
+  font-size: 1.2rem; /* Slightly smaller font size for the tagline */
+  color: #fff;
+}
+
+/* Additional styling for the profile image container, if you're using Image from 'next/image' */
+.headerImage {
+  border-radius: 50%; /* Ensures the image itself is round */
+  overflow: hidden; /* Ensures nothing spills outside the border-radius */
+  width: 100px; /* Set a fixed width */
+  height: 100px;  /* Removes any extra line-height space around the image */
+}
+
+.job {
+  margin-bottom: 2rem;
+  padding-left: 20px;
+}
+
+.jobTitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+.jobSubTitle {
+  font-size: 1.25rem;
+  color: #006992;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+.jobDescription {
+  font-size: 1rem;
+  color: #9FB3C8;
+  margin-bottom: 0.5rem; /* Adjust margin as needed */
+  padding-left: 12px;
+}
