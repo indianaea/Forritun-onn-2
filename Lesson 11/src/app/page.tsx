@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState, Fragment, useCallback } from 'react'
 
 
-const DATA = [
+const DATA: JobProps[] = [
   {
     id: 0,
     title: 'OK - Verkefnastjóri',
@@ -28,12 +28,13 @@ const DATA = [
 ]
 
 type JobProps = {
+  id: number;
   title: string;
   subTitle: string;
   description: string;
 };
 
-const Job = ({ title, subTitle, description }: JobProps) => {
+const Job = ({ id, title, subTitle, description }: JobProps) => {
   return (
     <div className="job">
       <h2 className="jobTitle">{title}</h2>
@@ -74,6 +75,7 @@ const Content = ({ data }: ContentProps) => {
     <div>
       {data.map(item => (
         <Job
+          id={item.id}
           key={item.id}
           title={item.title}
           subTitle={item.subTitle}
