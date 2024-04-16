@@ -1,13 +1,5 @@
 import { useState } from "react";
 
-// Define a type for what each review object will include
-type Review = {
-  name: string;
-  desc: string;
-  score: string;
-  image: File | null;
-};
-
 const App = () => {
   const [reviews, setReviews] = useState([]);
   const [name, setName] = useState("");
